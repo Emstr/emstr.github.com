@@ -7,51 +7,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-}
-
-articleLink {
-    text-decoration: none;
-    color: black;
-}
-
-.articleLink:visited {color:black;}
-
-.overlay:hover, .overlay:active {
-  background-color: red;
-}
-
-.sidebarLink {
-    color: #FFF;
-    text-decoration: none;
-    border-bottom: 2px solid lime;
-    transition: color 0.3s ease-in-out;
-}
-
-.sidebarLink:hover, .sidebarLink:active {
-    color: lime;
-}
-
-.introText {
-    width: 40%;
-    height: 100vh;
-    float: left;
-    text-align: right;
-    background-color: #2C2C2C;
-    position: fixed;
-    color: #FFF;
-}
-
-.sidebar h1 {
-    font-family: Bree Serif;
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.sidebar p {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 1.8;
-    font-weight: 100;
+    scroll-behavior: smooth;
+    
 }
 
 .sidebarContainer {
@@ -73,6 +30,19 @@ articleLink {
     margin-bottom: 20px;
 }
 
+.sidebar h1 {
+    font-family: Bree Serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.sidebar p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
 .contentContainer {
     margin-top: 40px;
     width: 70%;
@@ -87,6 +57,65 @@ articleLink {
     height: 1000px;
     margin: auto;
     
+}
+
+.aboutTextContainer {
+    margin-top: 6%;
+    width: 70%;
+    float: left;
+    font-family: Lato;
+    margin-bottom: 30px;
+    
+}
+
+.aboutImageContainer {
+    height: 300px;
+    overflow: hidden;
+}
+
+.aboutTextContainer img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.homeLink {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.sidebarLink:hover, .homeLink:hover, .sidebarLink:active, .homeLink:active {
+    color: lime;
+}
+
+articleLink {
+    text-decoration: none;
+    color: black;
+}
+
+.articleLink:visited, articleHintText {color:black;}
+
+.sidebarLink {
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 2px solid lime;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebarLink:hover, .sidebarLink:active {
+    color: lime;
+}
+
+.introText {
+    width: 40%;
+    height: 100vh;
+    float: left;
+    text-align: right;
+    background-color: #2C2C2C;
+    position: fixed;
+    color: #FFF;
 }
 
 .imgContainer {
@@ -118,6 +147,10 @@ articleLink {
     transition: .3s ease;
 }
 
+.overlay:hover, .overlay:active {
+  background-color: red;
+}
+
 .image1 {
     background-image: url(Assets/Photos/Space.jpeg)
 }
@@ -146,6 +179,14 @@ articleLink {
     background-image: url(Assets/Photos/Surf.jpeg)
 }
 
+.aboutimage1 {
+    background-image: url(Assets/Photos/Nick.jpg)
+}
+
+.aboutimage2 {
+    background-image: url(Assets/Photos/Cliff.jpg)
+}
+
 .featuredPost1 {
     width: 60%;
     float: left;
@@ -156,9 +197,6 @@ articleLink {
     width: 35%;
     float: left;
 }
-
-
-
 
 .blogTitle {
     position: absolute;
@@ -265,11 +303,22 @@ articleLink {
         float:none;
     }
     
+    .aboutTextContainer {
+    width: 100%;
+    float: left;
+    font-family: Lato;
+    margin-bottom: 30px;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
     .featuredPost1, .featuredPost2 {
     width: 100%;
+    }
+    
+    .aboutTextContainer {
+    margin-top: auto;
     }
     
 }
@@ -290,6 +339,8 @@ articleLink {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 20px;
+        margin-top: 50px;
     }
     
     .contentContainer {
