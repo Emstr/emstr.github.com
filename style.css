@@ -58,7 +58,7 @@ articleLink {
     background-color: #2C2C2C;
     color: #FFF;
     text-align: right;
-    width: 40%;
+    width: 30%;
     height: 100vh;
     float: left;
     position: fixed;
@@ -67,23 +67,26 @@ articleLink {
 .sidebar {
     margin-top: 80px;
     width: 80%;
-    height: 300px;
-    margin-right: auto;
-    margin-left: auto;
+    min-height: 300px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .contentContainer {
     margin-top: 40px;
-    width: 60%;
-    margin-left: 40%;
+    width: 70%;
+    margin-left: 30%;
     height: 1000px;
     float: left;
 }
 
 .content {
     width: 90%;
+    max-width: 900px;
     height: 1000px;
     margin: auto;
+    
 }
 
 .imgContainer {
@@ -224,6 +227,15 @@ articleLink {
     height: 150px;
 }
 
+
+@media only screen and (min-width: 2000px) {
+    .content { 
+    float: left;
+    margin-left: 50px;
+    }
+    
+}
+
 @media only screen and (max-width: 1272px) {
     .featuredPost1 {
     width: 47.5%;
@@ -235,7 +247,24 @@ articleLink {
     
     .introTextContainer {
     width: 90%;
-}
+    }
+    
+    .contentContainer {
+    margin-top: 40px;
+    width: 60%;
+    margin-left: 40%;
+    }
+    
+    .sidebarContainer {
+        width: 40%;
+    }
+    
+    .sidebar {
+        margin: auto;
+        margin-top: 80px;
+        float:none;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -255,10 +284,12 @@ articleLink {
     height: auto;
     float: left;
     position: static;
-}
+    }
     
     .sidebar {
         width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     
     .contentContainer {
@@ -267,5 +298,9 @@ articleLink {
         margin-left: 0px;
         height: 1000px;
         float: left;
-}
+    }
+    
+    .sidebarContainer {
+        text-align: left;
+    }
 }
