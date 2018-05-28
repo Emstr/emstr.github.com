@@ -1,0 +1,178 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.hero_container {
+    height: 360px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/hero.jpg');
+    background-size: cover;
+    max-height:100%;
+    max-width:100%;
+}
+
+.hero_text_container {
+    color: #FFF;
+    font-family: Lato;
+    text-align: center;
+    align-self: center;
+}
+
+.hero_text_container h1 {
+    font-size: 64px;
+    font-weight: 800;
+    
+}
+
+.hero_text_container h3 {
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+.destinations-container {
+    height: 650px;
+    margin: 0px;
+    float: left;
+    width: 100%;
+    
+}
+
+.destinations {
+    max-width: 1500px;
+    overflow: scroll;
+    margin: auto;
+}
+
+.destinations-text-container {
+    margin-top: 60px; 
+    color: #393939;
+    font-family: Lato;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 300px;
+}
+
+.destinations-text-container h2 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.destinations-scroll-wrapper {
+    height: 310px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-left: 5%;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+    width: 255px;
+    height: 310px;
+    flex: 0 0 auto;
+    background-color: black;
+    margin-right: 30px;
+    color: #FFF;
+    font-family: Lato;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+}
+
+.card img {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 10px;
+    right: -17px;
+    
+}
+
+.card h2{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.material-icons.md-18 { font-size: 14px; }
+
+.item {
+    font-size: 14px;
+    float: left;
+    margin-right: 8px;
+    
+}
+
+.card p{
+    margin-top: 45px;
+    font-size: 12px;
+}
+
+.learn_more_btn {
+    background-color: orange;
+    width: 215px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.learn_more_btn:hover {
+    background-color: #DF8D2B;
+    bottom: 22px;
+}
+
+.learn_more_btn p {
+    position: absolute;
+    bottom: 9px;
+    left: 78px;
+    
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .destinations-text-container {
+       width: 30%;
+        float: left;
+        margin-right: 0px;
+        
+    }
+    
+    .destinations-scroll-wrapper {
+        width: 63%;
+        float: right;
+        padding-left: 0px;
+    }
+    
+    .hero_container {
+        height: 500px;
+    }
+    
+    .destinations-container {
+    height: 400px;
+
+    
+}
+} 
+
+@media only screen and (min-width: 1500px) {
+    .destinations-scroll-wrapper {
+        min-width: 50%;
+        width: 1150px;
+        float: right;
+        padding-left: 0px;
+    }
+    
+    .destinations-text-container {
+        margin-left: 2%;
+    }
+}
