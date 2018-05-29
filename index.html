@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     </head>
     <body>
@@ -21,12 +23,11 @@
         </div>
         <div class="destinations-container">
             <div class="destinations">
-                <div class="destinations-text-container">
+                <div class="header-text-container destinations-header">
                     <h5>WHY SPACED</h5>
                     <h2>Destinations</h2>
                     <p>Spaced will take you on the journey  of a lifetime. Check out the awesome destinations we have available.</p>
                 </div>
-            
                 <div class="destinations-scroll-wrapper">
                     <div class="card jupiter">
                         <h6>MOST POPULAR</h6>
@@ -95,15 +96,48 @@
                 </div>
             </div>
         </div>
+        <div class="safety">
+            <div class="safety-container">
+                <div class="header-text-container safety-header">
+                    <h5>WHY SPACED</h5>
+                    <h2>Safety</h2>
+                    <p>We take safety extremely seriously. Our suits & ships go through rigorous safety tests every 3 months. Our crew is hand picked and trained for any situation. The precautions we go through are world class – and we’ve got the stats to back our efforts up:</p>
+                </div>
+                <div class="safety-features-container">
+                    <div class="safety-block">
+                        <div class="number"><span class="count">14000</span>+</div>
+                        <h5>Passengers</h5>
+                    </div>
+                    <div class="safety-block">
+                        <div class="number"><span class="count">263</span></div>
+                        <h5>Total trips taken</h5>
+                    </div>
+                    <div class="safety-block">
+                        <div class="number"><span class="count">8000</span>+</div>
+                        <h5>Adventures done</h5>
+                    </div>
+                    <div class="safety-block">
+                        <div class="number"><span class="count">0</span></div>
+                        <h5>Accidents or serious injuries</h5>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
         <script>
 
             // Changing the defaults
-            window.sr = ScrollReveal({ reset: true });
+            window.sr = ScrollReveal({ reset: false });
 
             // Customizing a reveal set
             //sr.reveal('.card', {duration:1500});
             sr.reveal('.card', { container: '.destinations-scroll-wrapper', duration:1500},300);
+            sr.reveal('.safety-block', {duration:1500},300);
             sr.reveal('.hero_text_container', {duration:1500});
             
 
