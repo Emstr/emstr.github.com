@@ -95,6 +95,18 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
 
+            // Changing the defaults
+            window.sr = ScrollReveal({ reset: true });
+
+            // Customizing a reveal set
+            //sr.reveal('.card', {duration:1500});
+            sr.reveal('.card', { container: '.destinations-scroll-wrapper', duration:1500},300);
+            sr.reveal('.hero_text_container', {duration:1500});
+            
+
+        </script>
     </body>
 </html>
